@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		503430B3FF1E4173727304C7 /* Pods_PaperKite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330C769DC4DDDABD1E3774E9 /* Pods_PaperKite.framework */; };
+		EA41AAF725D50BB100343395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41AAF625D50BB100343395 /* AppDelegate.swift */; };
+		EA41AAFB25D50BB400343395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA41AAFA25D50BB400343395 /* Assets.xcassets */; };
+		EA41AAFE25D50BB400343395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA41AAFC25D50BB400343395 /* Main.storyboard */; };
+		EA41AB0B25D50EC000343395 /* PaperKiteLaunchHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA41AAF425D50BB100343395 /* PaperKiteLaunchHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA41AB1125D50FBE00343395 /* PKWallpaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41AB1025D50FBE00343395 /* PKWallpaperModel.swift */; };
+		EA41AB1525D50FCA00343395 /* PKVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41AB1425D50FCA00343395 /* PKVideoModel.swift */; };
+		EA41AB1925D51DE000343395 /* String+PaperKite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41AB1825D51DE000343395 /* String+PaperKite.swift */; };
+		EA7CE60C25D275E0008E0624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7CE60B25D275E0008E0624 /* AppDelegate.swift */; };
+		EA7CE61025D275E2008E0624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7CE60F25D275E2008E0624 /* Assets.xcassets */; };
+		EA7CE61325D275E2008E0624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7CE61125D275E2008E0624 /* Main.storyboard */; };
+		EAE99F3225D27FF100A71108 /* PKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE99F3125D27FF100A71108 /* PKConfig.swift */; };
+		EAE99F3925D2919200A71108 /* PKPlayerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE99F3825D2919200A71108 /* PKPlayerWindowController.swift */; };
+		EAE99F3C25D291A300A71108 /* PKPlayerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE99F3B25D291A300A71108 /* PKPlayerWindow.swift */; };
+		EAE99F3F25D291F100A71108 /* PKPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE99F3E25D291F100A71108 /* PKPlayerController.swift */; };
+		EAE99F4625D2928F00A71108 /* PKAlertWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE99F4525D2928F00A71108 /* PKAlertWindowController.swift */; };
+		EAE99F4A25D292AD00A71108 /* PKAlertWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE99F4925D292AD00A71108 /* PKAlertWindow.swift */; };
+		EAE99F5025D297A200A71108 /* PKAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE99F4F25D297A200A71108 /* PKAlert.swift */; };
+		EAFE1EF925D3D8E400A1C1B0 /* PKPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE1EF825D3D8E400A1C1B0 /* PKPlayerView.swift */; };
+		EAFE1EFC25D3D94100A1C1B0 /* NSView+PaperKite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE1EFB25D3D94100A1C1B0 /* NSView+PaperKite.swift */; };
+		EAFE1F0125D3DB7A00A1C1B0 /* PKDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE1F0025D3DB7A00A1C1B0 /* PKDataManager.swift */; };
+		EAFE1F0725D3E68700A1C1B0 /* PKNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE1F0625D3E68700A1C1B0 /* PKNetwork.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA41AB0A25D50EA400343395 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				EA41AB0B25D50EC000343395 /* PaperKiteLaunchHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		330C769DC4DDDABD1E3774E9 /* Pods_PaperKite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaperKite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9CAA085894B947A0F31CF7 /* Pods-PaperKite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperKite.release.xcconfig"; path = "Target Support Files/Pods-PaperKite/Pods-PaperKite.release.xcconfig"; sourceTree = "<group>"; };
+		CC8F2C3FF7D7982E33E37D9B /* Pods-PaperKite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperKite.debug.xcconfig"; path = "Target Support Files/Pods-PaperKite/Pods-PaperKite.debug.xcconfig"; sourceTree = "<group>"; };
+		EA41AAF425D50BB100343395 /* PaperKiteLaunchHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperKiteLaunchHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA41AAF625D50BB100343395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA41AAFA25D50BB400343395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA41AAFD25D50BB400343395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA41AAFF25D50BB400343395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA41AB0025D50BB400343395 /* PaperKiteLaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaperKiteLaunchHelper.entitlements; sourceTree = "<group>"; };
+		EA41AB1025D50FBE00343395 /* PKWallpaperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKWallpaperModel.swift; sourceTree = "<group>"; };
+		EA41AB1425D50FCA00343395 /* PKVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKVideoModel.swift; sourceTree = "<group>"; };
+		EA41AB1825D51DE000343395 /* String+PaperKite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PaperKite.swift"; sourceTree = "<group>"; };
+		EA7CE60825D275E0008E0624 /* PaperKite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperKite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7CE60B25D275E0008E0624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA7CE60F25D275E2008E0624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA7CE61225D275E2008E0624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA7CE61425D275E2008E0624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7CE61525D275E2008E0624 /* PaperKite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaperKite.entitlements; sourceTree = "<group>"; };
+		EAE99F3125D27FF100A71108 /* PKConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKConfig.swift; sourceTree = "<group>"; };
+		EAE99F3825D2919200A71108 /* PKPlayerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKPlayerWindowController.swift; sourceTree = "<group>"; };
+		EAE99F3B25D291A300A71108 /* PKPlayerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKPlayerWindow.swift; sourceTree = "<group>"; };
+		EAE99F3E25D291F100A71108 /* PKPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKPlayerController.swift; sourceTree = "<group>"; };
+		EAE99F4525D2928F00A71108 /* PKAlertWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAlertWindowController.swift; sourceTree = "<group>"; };
+		EAE99F4925D292AD00A71108 /* PKAlertWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAlertWindow.swift; sourceTree = "<group>"; };
+		EAE99F4F25D297A200A71108 /* PKAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAlert.swift; sourceTree = "<group>"; };
+		EAFE1EF825D3D8E400A1C1B0 /* PKPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKPlayerView.swift; sourceTree = "<group>"; };
+		EAFE1EFB25D3D94100A1C1B0 /* NSView+PaperKite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+PaperKite.swift"; sourceTree = "<group>"; };
+		EAFE1F0025D3DB7A00A1C1B0 /* PKDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKDataManager.swift; sourceTree = "<group>"; };
+		EAFE1F0625D3E68700A1C1B0 /* PKNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKNetwork.swift; path = ../../../../../../PKNetwork.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA41AAF125D50BB100343395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7CE60525D275E0008E0624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503430B3FF1E4173727304C7 /* Pods_PaperKite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9137B94914EC4120AC8140B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC8F2C3FF7D7982E33E37D9B /* Pods-PaperKite.debug.xcconfig */,
+				8D9CAA085894B947A0F31CF7 /* Pods-PaperKite.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5977D38370540D177A7F90E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				330C769DC4DDDABD1E3774E9 /* Pods_PaperKite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA41AAEB25D508FC00343395 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA41AB1025D50FBE00343395 /* PKWallpaperModel.swift */,
+				EA41AB1425D50FCA00343395 /* PKVideoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA41AAF525D50BB100343395 /* PaperKiteLaunchHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EA41AAF625D50BB100343395 /* AppDelegate.swift */,
+				EA41AAFA25D50BB400343395 /* Assets.xcassets */,
+				EA41AAFC25D50BB400343395 /* Main.storyboard */,
+				EA41AAFF25D50BB400343395 /* Info.plist */,
+				EA41AB0025D50BB400343395 /* PaperKiteLaunchHelper.entitlements */,
+			);
+			path = PaperKiteLaunchHelper;
+			sourceTree = "<group>";
+		};
+		EA7CE5FF25D275E0008E0624 = {
+			isa = PBXGroup;
+			children = (
+				EA7CE60A25D275E0008E0624 /* PaperKite */,
+				EA41AAF525D50BB100343395 /* PaperKiteLaunchHelper */,
+				EA7CE60925D275E0008E0624 /* Products */,
+				9137B94914EC4120AC8140B8 /* Pods */,
+				A5977D38370540D177A7F90E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA7CE60925D275E0008E0624 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA7CE60825D275E0008E0624 /* PaperKite.app */,
+				EA41AAF425D50BB100343395 /* PaperKiteLaunchHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA7CE60A25D275E0008E0624 /* PaperKite */ = {
+			isa = PBXGroup;
+			children = (
+				EA7CE61D25D275FB008E0624 /* Core */,
+				EA7CE61C25D275E9008E0624 /* SupportingFiles */,
+			);
+			path = PaperKite;
+			sourceTree = "<group>";
+		};
+		EA7CE61C25D275E9008E0624 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EA7CE60F25D275E2008E0624 /* Assets.xcassets */,
+				EA7CE61125D275E2008E0624 /* Main.storyboard */,
+				EA7CE61425D275E2008E0624 /* Info.plist */,
+				EA7CE61525D275E2008E0624 /* PaperKite.entitlements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EA7CE61D25D275FB008E0624 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE1F0525D3E66900A1C1B0 /* Network */,
+				EAFE1EFF25D3DB5500A1C1B0 /* Server */,
+				EAE99F4125D2924700A71108 /* General */,
+				EAE99F3025D27FDC00A71108 /* Utils */,
+				EA7CE61F25D27603008E0624 /* Moudles */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EA7CE61F25D27603008E0624 /* Moudles */ = {
+			isa = PBXGroup;
+			children = (
+				EA7CE60B25D275E0008E0624 /* AppDelegate.swift */,
+				EAE99F3525D2917800A71108 /* Plyaer */,
+			);
+			path = Moudles;
+			sourceTree = "<group>";
+		};
+		EAE99F3025D27FDC00A71108 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EAE99F3125D27FF100A71108 /* PKConfig.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EAE99F3525D2917800A71108 /* Plyaer */ = {
+			isa = PBXGroup;
+			children = (
+				EAE99F3825D2919200A71108 /* PKPlayerWindowController.swift */,
+				EAE99F3B25D291A300A71108 /* PKPlayerWindow.swift */,
+				EAE99F3E25D291F100A71108 /* PKPlayerController.swift */,
+				EAFE1EF825D3D8E400A1C1B0 /* PKPlayerView.swift */,
+			);
+			path = Plyaer;
+			sourceTree = "<group>";
+		};
+		EAE99F4125D2924700A71108 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				EA41AAEB25D508FC00343395 /* Model */,
+				EAFE1EF625D3D7F000A1C1B0 /* UI */,
+				EAE99F4225D2924E00A71108 /* Category */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		EAE99F4225D2924E00A71108 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE1EFB25D3D94100A1C1B0 /* NSView+PaperKite.swift */,
+				EA41AB1825D51DE000343395 /* String+PaperKite.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EAE99F4425D2927100A71108 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				EAE99F4525D2928F00A71108 /* PKAlertWindowController.swift */,
+				EAE99F4925D292AD00A71108 /* PKAlertWindow.swift */,
+				EAE99F4F25D297A200A71108 /* PKAlert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		EAFE1EF625D3D7F000A1C1B0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EAE99F4425D2927100A71108 /* Alert */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EAFE1EFF25D3DB5500A1C1B0 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE1F0025D3DB7A00A1C1B0 /* PKDataManager.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		EAFE1F0525D3E66900A1C1B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE1F0625D3E68700A1C1B0 /* PKNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA41AAF325D50BB100343395 /* PaperKiteLaunchHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA41AB0125D50BB400343395 /* Build configuration list for PBXNativeTarget "PaperKiteLaunchHelper" */;
+			buildPhases = (
+				EA41AAF025D50BB100343395 /* Sources */,
+				EA41AAF125D50BB100343395 /* Frameworks */,
+				EA41AAF225D50BB100343395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaperKiteLaunchHelper;
+			productName = PaperKiteLaunchHelper;
+			productReference = EA41AAF425D50BB100343395 /* PaperKiteLaunchHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA7CE60725D275E0008E0624 /* PaperKite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7CE61825D275E2008E0624 /* Build configuration list for PBXNativeTarget "PaperKite" */;
+			buildPhases = (
+				4F9CFB517BC97B6602ECB25E /* [CP] Check Pods Manifest.lock */,
+				EA7CE60425D275E0008E0624 /* Sources */,
+				EA7CE60525D275E0008E0624 /* Frameworks */,
+				EA7CE60625D275E0008E0624 /* Resources */,
+				20B1D2A4E2A6AA45F82E26E8 /* [CP] Embed Pods Frameworks */,
+				EA41AB0A25D50EA400343395 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaperKite;
+			productName = DailyWallpaper;
+			productReference = EA7CE60825D275E0008E0624 /* PaperKite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA7CE60025D275E0008E0624 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PK;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					EA41AAF325D50BB100343395 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					EA7CE60725D275E0008E0624 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = EA7CE60325D275E0008E0624 /* Build configuration list for PBXProject "PaperKite" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA7CE5FF25D275E0008E0624;
+			productRefGroup = EA7CE60925D275E0008E0624 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA7CE60725D275E0008E0624 /* PaperKite */,
+				EA41AAF325D50BB100343395 /* PaperKiteLaunchHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA41AAF225D50BB100343395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA41AAFB25D50BB400343395 /* Assets.xcassets in Resources */,
+				EA41AAFE25D50BB400343395 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7CE60625D275E0008E0624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7CE61025D275E2008E0624 /* Assets.xcassets in Resources */,
+				EA7CE61325D275E2008E0624 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B1D2A4E2A6AA45F82E26E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaperKite/Pods-PaperKite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaperKite/Pods-PaperKite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaperKite/Pods-PaperKite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F9CFB517BC97B6602ECB25E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaperKite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA41AAF025D50BB100343395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA41AAF725D50BB100343395 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7CE60425D275E0008E0624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE99F3225D27FF100A71108 /* PKConfig.swift in Sources */,
+				EA7CE60C25D275E0008E0624 /* AppDelegate.swift in Sources */,
+				EAE99F5025D297A200A71108 /* PKAlert.swift in Sources */,
+				EAFE1F0725D3E68700A1C1B0 /* PKNetwork.swift in Sources */,
+				EA41AB1525D50FCA00343395 /* PKVideoModel.swift in Sources */,
+				EAFE1EFC25D3D94100A1C1B0 /* NSView+PaperKite.swift in Sources */,
+				EA41AB1125D50FBE00343395 /* PKWallpaperModel.swift in Sources */,
+				EAE99F3F25D291F100A71108 /* PKPlayerController.swift in Sources */,
+				EAE99F4A25D292AD00A71108 /* PKAlertWindow.swift in Sources */,
+				EA41AB1925D51DE000343395 /* String+PaperKite.swift in Sources */,
+				EAE99F3925D2919200A71108 /* PKPlayerWindowController.swift in Sources */,
+				EAE99F3C25D291A300A71108 /* PKPlayerWindow.swift in Sources */,
+				EAE99F4625D2928F00A71108 /* PKAlertWindowController.swift in Sources */,
+				EAFE1EF925D3D8E400A1C1B0 /* PKPlayerView.swift in Sources */,
+				EAFE1F0125D3DB7A00A1C1B0 /* PKDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA41AAFC25D50BB400343395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA41AAFD25D50BB400343395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA7CE61125D275E2008E0624 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA7CE61225D275E2008E0624 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA41AB0225D50BB400343395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PaperKiteLaunchHelper/PaperKiteLaunchHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PaperKiteLaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyb.PaperKiteLaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA41AB0325D50BB400343395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PaperKiteLaunchHelper/PaperKiteLaunchHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PaperKiteLaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyb.PaperKiteLaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA7CE61625D275E2008E0624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA7CE61725D275E2008E0624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EA7CE61925D275E2008E0624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8F2C3FF7D7982E33E37D9B /* Pods-PaperKite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PaperKite/SupportingFiles/PaperKite.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PaperKite/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyb.PaperKite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA7CE61A25D275E2008E0624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9CAA085894B947A0F31CF7 /* Pods-PaperKite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PaperKite/SupportingFiles/PaperKite.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PaperKite/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyb.PaperKite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA41AB0125D50BB400343395 /* Build configuration list for PBXNativeTarget "PaperKiteLaunchHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA41AB0225D50BB400343395 /* Debug */,
+				EA41AB0325D50BB400343395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA7CE60325D275E0008E0624 /* Build configuration list for PBXProject "PaperKite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7CE61625D275E2008E0624 /* Debug */,
+				EA7CE61725D275E2008E0624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA7CE61825D275E2008E0624 /* Build configuration list for PBXNativeTarget "PaperKite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7CE61925D275E2008E0624 /* Debug */,
+				EA7CE61A25D275E2008E0624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA7CE60025D275E0008E0624 /* Project object */;
+}
