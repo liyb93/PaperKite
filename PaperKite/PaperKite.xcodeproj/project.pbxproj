@@ -73,7 +73,7 @@
 		EAFE1EF825D3D8E400A1C1B0 /* PKPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKPlayerView.swift; sourceTree = "<group>"; };
 		EAFE1EFB25D3D94100A1C1B0 /* NSView+PaperKite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+PaperKite.swift"; sourceTree = "<group>"; };
 		EAFE1F0025D3DB7A00A1C1B0 /* PKDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKDataManager.swift; sourceTree = "<group>"; };
-		EAFE1F0625D3E68700A1C1B0 /* PKNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKNetwork.swift; path = ../../../../../../PKNetwork.swift; sourceTree = "<group>"; };
+		EAFE1F0625D3E68700A1C1B0 /* PKNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

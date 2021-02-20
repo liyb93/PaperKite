@@ -47,7 +47,8 @@ class PKPlayerView: NSView {
             player.replaceCurrentItem(with: item)
         } else {
             videoPlayer = AVPlayer.init(playerItem: item)
-            videoPlayer?.isMuted = true
+            // 静音
+            videoPlayer?.volume = 0
         }
         if playerLayer == nil {
             playerLayer = AVPlayerLayer.init(player: videoPlayer)
